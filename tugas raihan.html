@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shosuit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Brintany&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #2c2c2c, #8b5e3b, #ffffff);
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #2c2c2c;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .motto {
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 5px;
+            color: #f4a835;
+        }
+        .info {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensure content does not overflow */
+        }
+        .product-gallery {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .product-item {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            margin: 0 10px;
+        }
+        .product-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-item p {
+            margin: 5px 0;
+        }
+        footer {
+            background: #2c2c2c;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        nav {
+            background: #8b5e3b;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #f4a835;
+            font-family: 'Brintany', cursive;
+        }
+        .contact-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #f4a835;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden; /* Ensure slider does not overflow */
+        }
+        .slider .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slider .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slider .prev, .slider .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .slider .prev {
+            left: 10px;
+        }
+        .slider .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ShoSuit</div>
+        <div class="motto">"Pelepas Dahaga Di Setiap Rasa...!"</div>
+    </header>
+    <nav>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#alamat">Alamat</a>
+        <a href="#produk">Produk</a>
+        <a href="#jam">Jam Operasional</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+    <div class="container">
+        <div class="info" id="tentang">
+            <h2>Tentang Kami</h2>
+            <p>Toko ShoSuit didirikan sejak tahun 2022/2023.kami berfokus untuk menjual minuman seperti classic tea,choco series,dan hits series</p>
+        </div>
+        <div class="info" id="alamat">
+            <h2>Alamat</h2>
+            <p>Puri Paku Jaya Regency Blok D Nomor 7</p>
+        </div>
+        <div class="info" id="produk">
+            <h2>Jenis Produk</h2>
+            <p>classic tea,choco series,hits series</p>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <div class="product-gallery">
+                            <div class="product-item">
+                                <img src="produk 1.jpeg" alt="Produk 1">
+                                <p>Classic Tea</p>
+                                <p>Harga: Rp 4.000 (L), Rp 5.000 (XL)</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="produk 2.jpeg" alt="Produk 2">
+                                <p>MAGNUM Choco</p>
+                                <p>Harga: Rp 9.000 (M), Rp 10.000 (L), Rp 12.000 (XL)</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="produk 3.jpeg" alt="Produk 3">
+                                <p>BELGIAN Choco</p>
+                                <p>Harga: Rp 9.000 (M), Rp 10.000 (L), Rp 12.000 (XL)</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="produk 4.jpeg" alt="Produk 4">
+                                <p>ESPRESSO Choco</p>
+                                <p>Harga: Rp 9.000 (M), Rp 10.000 (L), Rp 12.000 (XL)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="product-gallery">
+                            <div class="product-item">
+                                <img src="produk 5.jpeg" alt="Produk 5">
+                                <p>HAZELNUT Choco</p>
+                                <p>Harga: Rp 9.000 (M), Rp 10.000 (L), Rp 12.000 (XL)</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="produk 6.jpeg" alt="Produk 6">
+                                <p>HICKORY Choco</p>
+                                <p>Harga: Rp 9.000 (M), Rp 10.000 (L), Rp 12.000 (XL)</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="produk 7.jpeg" alt="Produk 7">
+                                <p>MANGO HAWAIAN Hits</p>
+                                <p>Harga: Rp 9.000 (M), Rp 10.000 (L), Rp 12.000 (XL)</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="produk 8.jpeg" alt="Produk 8">
+                                <p>TARO Hits</p>
+                                <p>Harga: Rp 9.000 (M), Rp 10.000 (L), Rp 12.000 (XL)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="product-gallery">
+                            <div class="product-item">
+                                <img src="produk 9.jpeg" alt="Produk 9">
+                                <p>STAWBERRY FRENZY Hits</p>
+                                <p>Harga: Rp 9.000 (M), Rp 10.000 (L), Rp 12.000 (XL)</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="produk 10.jpeg" alt="Produk 10">
+                                <p>CAPUCINNO Hits</p>
+                                <p>Harga: Rp 9.000 (M), Rp 10.000 (L), Rp 12.000 (XL)</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="produk 11.jpeg" alt="Produk 11">
+                                <p>VANILA TWILIGHT Hits</p>
+                                <p>Harga: Rp 9.000 (M), Rp 10.000 (L), Rp 12.000 (XL)</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="produk 12.jpeg" alt="Produk 12">
+                                <p>GREEN TEA Hits</p>
+                                <p>Harga: Rp 9.000 (M), Rp 10.000 (L), Rp 12.000 (XL)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="info" id="jam">
+            <h2>Jam Operasional</h2>
+            <p>OPEN EVERYDAY</p>
+            <p>from 11.00 until 23.00</p>
+        </div>
+        <div class="info" id="kontak">
+            <h2>Kontak</h2>
+            <p>Email:-</p>
+            <p>Telepon:0819-9929-2527</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 ShoSuit. Semua Hak Dilindungi.</p>
+    </footer>
+    <script>
+        let currentSlide = 0;
+        function moveSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            currentSlide = (currentSlide + n + slides.length) % slides.length;
+            document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+    </script>
+</body>
+</html>
